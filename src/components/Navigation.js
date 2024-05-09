@@ -1,8 +1,10 @@
 import React from 'react';
-import { Navbar, Container, InputGroup, Form, Button } from 'react-bootstrap';
+import { Navbar, Container, InputGroup, Form, Nav} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons'; // Correct import
+import {faHeart} from '@fortawesome/free-solid-svg-icons';
+import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
 import logo from '../images/logo1.png';
 import './Navigation.css';
 
@@ -10,21 +12,27 @@ function Navigation() {
   return (
     <Navbar expand="lg" className="navbg">
       <Container fluid style={{color:'white'}} >
-        <Navbar.Brand style={{color:'white'}} href="#home">
+        <Navbar.Brand href="#home">
           <img
             src={logo}
             width="200"
             height="50"
             alt="Logo"
+            style={{marginLeft:'-48px'}}
           />
         </Navbar.Brand>
-        <Navbar.Brand href="#home">Kurta</Navbar.Brand>
-        <Navbar.Brand href="#home">Sarees</Navbar.Brand>
-        <Navbar.Brand href="#home">kurta Set</Navbar.Brand>
-        <Navbar.Brand href="#home">Wedding</Navbar.Brand>
-        <Form className="d-flex ms-auto"> {/* Align to the right */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Kurta</Nav.Link>
+            <Nav.Link href="#link">Saree</Nav.Link>
+            <Nav.Link href="#link">Kurta Set</Nav.Link>
+            <Nav.Link href="#link">Wedding</Nav.Link>
+          </Nav>
+          </Navbar.Collapse>
+        <Form className="d-flex ms-auto" > {/* Align to the right */}
           <InputGroup>
-            <InputGroup.Text>
+            <InputGroup.Text style={{marginLeft:'0rem'}}>
               <FontAwesomeIcon icon={faSearch} /> {/* Search icon */}
             </InputGroup.Text>
             <Form.Control
@@ -33,16 +41,16 @@ function Navigation() {
               aria-label="Search"
             />
           </InputGroup>
-          
-          {/* Correct user icon with valid Font Awesome import */}
-          <FontAwesomeIcon icon={faUser} style={{ color: 'black', marginLeft: '5px',width:'120px',height:'20px' }} /> 
-          
-          
-          
-          
-          <div>Profile</div>
         </Form>
-      </Container>
+         </Container>
+         <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+         <Nav.Link href="#home"><FontAwesomeIcon icon={faUser} style={{ color: 'black', fontSize: '24px' }} /></Nav.Link>
+         <Nav.Link href="#home">    <FontAwesomeIcon icon={faHeart} style={{ color: '#000000', fontSize: '24px' }} /></Nav.Link>
+         <Nav.Link href="#home">  <FontAwesomeIcon icon={faCartShopping} style={{ color: '#000000', fontSize: '24px'}} /></Nav.Link>
+         </Nav>
+         </Navbar.Collapse>
+     
     </Navbar>
   );
 }

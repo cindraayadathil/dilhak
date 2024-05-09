@@ -1,0 +1,20 @@
+.justify-content-center{
+    background-image: url(/src/images/bestbg.jpeg);
+    background-size:auto;
+    padding-top: 20px;
+    height: 80px;
+    width: 100%;
+}
+.nav-link {
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(243, 18, 56); /* Default color for Nav.Link */
+  }
+  .active:active{
+    color: rgb(143, 31, 31);
+  }
+  
+  .nav-link:hover { 
+    color: gray; 
+  }
