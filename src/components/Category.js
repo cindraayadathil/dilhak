@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button, Navbar, Nav } from 'react-bootstrap';
+import './Category.css';
 import N2 from '../images/N2.jpg';
 import N1 from '../images/N1.webp';
 import N3 from '../images/N3.avif';
@@ -94,7 +95,7 @@ const Category = () => {
 
   return (
     <div>
-     <h1 style={{paddingTop:'50px'}}>SHOP BY CATEGORY</h1>
+     <h1 className='catbg' style={{paddingTop:'50px'}}>SHOP BY CATEGORY</h1>
 
       {/* Product Card Grid */}
       <Container className="py-5" >
@@ -102,7 +103,7 @@ const Category = () => {
           {cards.map((card, index) => (
             <Col key={index} className="mb-4">
               <Card >
-                <Card.Img variant="top" src={card.image} style={{height:'300px'}}/>
+                <Card.Img variant="top" src={card.image} style={{height:'700px'}}/>
                 <Card.Body>
                   <Card.Title>{card.title}</Card.Title>
                   {card.sale && <Card.Subtitle className="mb-2 text-muted small">{card.sale}</Card.Subtitle>}

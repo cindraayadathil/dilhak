@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
+body{
 
+  background-image: url(/src/images/bestbg.jpeg);
+background-size: cover;
+
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

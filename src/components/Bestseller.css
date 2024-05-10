@@ -1,5 +1,5 @@
 .justify-content-center{
-    background-image: url(/src/images/bestbg.jpeg);
+    /* background-image: url(/src/images/bestbg.jpeg); */
     background-size:auto;
     padding-top: 20px;
     height: 80px;
@@ -7,14 +7,38 @@
 }
 .nav-link {
     font-size: 17px;
-    font-family: serif;
+    font-family: "ABeeZee", sans-serif;
     font-weight: bold;
     color: rgb(243, 18, 56); /* Default color for Nav.Link */
   }
-  .active:active{
+  .card:hover{
+  transform: translateY(10px);
+    transition: 0.15s;
+    opacity: 1;
+    box-shadow: 10px 7px 20px;
+    border: rgb(168, 162, 162); 
+    border-radius: 40px;
+  }
+.cardbody{
+  background-image:linear-gradient(rgb(248, 167, 167),rgb(248, 204, 211));
+  font-family: "ABeeZee", sans-serif;
+  color: rgb(245, 73, 102);
+}
+
+  h1{
+    /* font-size: 17px; */
+    font-family: "ABeeZee", sans-serif;
+    
+    color: rgb(243, 18, 56); /* Default color for Nav.Link */
+  }
+  h1:active{
     color: rgb(143, 31, 31);
   }
   
-  .nav-link:hover { 
+  h1:hover { 
     color: gray; 
+  }
+
+.nav-item-spacing {
+    margin-right: 20px; /* Add margin to create space between Nav.Items */
   }

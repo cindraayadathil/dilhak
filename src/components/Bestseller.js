@@ -36,20 +36,20 @@ function Bestseller() {
   return (
     <div>
       <Nav className="justify-content-center" activeKey={activeSection}>
-        <Nav.Item>
-          <Nav.Link  className='active' eventKey="Bestseller" onClick={() => setActiveSection('Bestseller')}>
+        <Nav.Item  className="nav-item-spacing"> 
+          <h1 className='active' eventKey="Bestseller" onClick={() => setActiveSection('Bestseller')}>
             Bestseller
-          </Nav.Link>
+          </h1>
         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link className='active' eventKey="Trending" onClick={() => setActiveSection('Trending')}>
+        <Nav.Item  className="nav-item-spacing">
+          <h1 className='active' eventKey="Trending" onClick={() => setActiveSection('Trending')}>
             Trending
-          </Nav.Link>
+          </h1>
         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link className='active' eventKey="Latest" onClick={() => setActiveSection('Latest')}>
+        <Nav.Item  className="nav-item-spacing">
+          <h1 className='active' eventKey="Latest" onClick={() => setActiveSection('Latest')}>
             Latest
-          </Nav.Link>
+          </h1>
         </Nav.Item>
       </Nav>
 
@@ -57,12 +57,12 @@ function Bestseller() {
         <Row>
           {sections[activeSection].map((card, index) => (
             <Col sm={3} key={index}>
-              <Card style={{ Width: '20rem' }}>
+              <Card  data-aos="fade-up"  data-aos-delay={index * 200}  style={{ Width: '20rem' }}>
                 <Card.Img variant="top" src={card.imageUrl}style={{ Width: '20rem' }} />
-                <Card.Body>
+                <Card.Body className='cardbody'>
                   <Card.Title>{card.title}</Card.Title>
                   <Card.Text>{card.text}</Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="outline">Go somewhere</Button>
                 </Card.Body>
               </Card>
             </Col>
