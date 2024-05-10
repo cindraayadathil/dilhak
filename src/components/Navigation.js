@@ -10,8 +10,8 @@ import './Navigation.css';
 
 function Navigation() {
   return (
-    <Navbar expand="lg" className="navbg">
-      <Container fluid style={{color:'white'}} >
+    <Navbar expand="lg" className="navbar">
+      <Container fluid  >
         <Navbar.Brand href="#home">
           <img
             src={logo}
@@ -23,11 +23,12 @@ function Navigation() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Kurta</Nav.Link>
-            <Nav.Link href="#link">Saree</Nav.Link>
-            <Nav.Link href="#link">Kurta Set</Nav.Link>
-            <Nav.Link href="#link">Wedding</Nav.Link>
+          <Nav className=" me-auto">
+            <Nav.Link className='navbar' href="#home">KURTA</Nav.Link>
+            <Nav.Link className='navbar'href="#link">SAREE</Nav.Link>
+            <Nav.Link className='navbar' href="#link">KURTA SET</Nav.Link>
+            <Nav.Link className='navbar' href="#link">CHURIDAR</Nav.Link>
+            <Nav.Link className='navbar' href="#link">CHURIDAR MATERIAL</Nav.Link>
           </Nav>
           </Navbar.Collapse>
         <Form className="d-flex ms-auto" > {/* Align to the right */}
