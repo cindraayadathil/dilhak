@@ -31,7 +31,7 @@ function Navigation() {
             <Nav.Link className='navbar' href="#link">CHURIDAR MATERIAL</Nav.Link>
           </Nav>
           </Navbar.Collapse>
-        <Form className="d-flex ms-auto" style={{width:'400px'}}> {/* Align to the right */}
+        <Form className="d-flex ms-auto" style={{width:'500px'}}> {/* Align to the right */}
           <InputGroup>
             <InputGroup.Text style={{marginLeft:'0rem'}}>
               <FontAwesomeIcon icon={faSearch} /> {/* Search icon */}
