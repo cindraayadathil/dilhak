@@ -103,7 +103,7 @@ const Category = () => {
           {cards.map((card, index) => (
             <Col key={index} className="mb-4">
               <Card >
-                <Card.Img variant="top" src={card.image} style={{height:'700px'}}/>
+                <Card.Img variant="top" src={card.image} style={{height:'300px'}}/>
                 <Card.Body>
                   <Card.Title>{card.title}</Card.Title>
                   {card.sale && <Card.Subtitle className="mb-2 text-muted small">{card.sale}</Card.Subtitle>}

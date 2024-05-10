@@ -11,18 +11,25 @@
     font-weight: bold;
     color: rgb(243, 18, 56); /* Default color for Nav.Link */
   }
+  .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color:transparent;
+ border: none;
+  }
   .card:hover{
   transform: translateY(10px);
-    transition: 0.15s;
     opacity: 1;
     box-shadow: 10px 7px 20px;
     border: rgb(168, 162, 162); 
-    border-radius: 40px;
   }
+  
 .cardbody{
-  background-image:linear-gradient(rgb(248, 167, 167),rgb(248, 204, 211));
+  /* background-image:linear-gradient(rgb(248, 167, 167),rgb(248, 204, 211)); */
   font-family: "ABeeZee", sans-serif;
-  color: rgb(245, 73, 102);
+  color: rgb(240, 44, 77);
+  font-weight: bolder;
+  background-color: transparent;
 }
 
   h1{

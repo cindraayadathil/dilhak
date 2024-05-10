@@ -57,13 +57,16 @@ function Bestseller() {
         <Row>
           {sections[activeSection].map((card, index) => (
             <Col sm={3} key={index}>
-              <Card  data-aos="fade-up"  data-aos-delay={index * 200}  style={{ Width: '20rem' }}>
-                <Card.Img variant="top" src={card.imageUrl}style={{ Width: '20rem' }} />
-                <Card.Body className='cardbody'>
-                  <Card.Title>{card.title}</Card.Title>
-                  <Card.Text>{card.text}</Card.Text>
-                  <Button variant="outline">Go somewhere</Button>
-                </Card.Body>
+              <Card className='card' data-aos="fade-up"  data-aos-delay={index * 200}  style={{ Width: '20rem',overflow:'hidden' }}>
+                
+                <Card.Img variant="top" src={card.imageUrl}style={{ Width: '35px',borderRadius:'10px',height:'305px' }} />
+                    <Card.Body className='cardbody'>
+                      <Card.Title>{card.title}</Card.Title>
+                      <Card.Text>{card.text}</Card.Text>
+                      <Button variant="outline">Go somewhere</Button>
+                    </Card.Body>
+                
+                
               </Card>
             </Col>
           ))}
