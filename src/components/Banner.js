@@ -8,15 +8,15 @@ import "./Banner.css";
 function Banner() {
   return (
     <div className="Banner">
-      <Carousel indicators={false}  controls={false} interval={1500}>
+      <Carousel indicators={false}  controls={false} interval={1000}>
       <Carousel.Item>
-          <img src={banner} alt="Banner" width='100%' height='90%' className="banner-img" />
+          <img src={banner} alt="Banner" width='100%' height='730px' className="banner-img" />
       </Carousel.Item>
       <Carousel.Item>
-          <img src={banner} alt="Banner" width='100%' height='90%' className="banner-img" />
+          <img src={banner} alt="Banner" width='100%' height='730px' className="banner-img" />
       </Carousel.Item>
       <Carousel.Item>
-          <img src={banner} alt="Banner" width='100%' height='90%' className="banner-img" />
+          <img src={banner} alt="Banner" width='100%' height='730px' className="banner-img" />
       </Carousel.Item>
     </Carousel>
     </div>
