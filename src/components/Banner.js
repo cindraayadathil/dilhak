@@ -8,7 +8,7 @@ import "./Banner.css";
 function Banner() {
   return (
     <div className="Banner">
-        <Carousel>
+      <Carousel indicators={false}  controls={false} interval={1500}>
       <Carousel.Item>
           <img src={banner} alt="Banner" width='100%' height='90%' className="banner-img" />
       </Carousel.Item>

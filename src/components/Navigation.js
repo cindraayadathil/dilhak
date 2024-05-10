@@ -24,11 +24,11 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className=" me-auto">
-            <Nav.Link className='navbar' href="#home">KURTA</Nav.Link>
-            <Nav.Link className='navbar'href="#link">SAREE</Nav.Link>
-            <Nav.Link className='navbar' href="#link">KURTA SET</Nav.Link>
-            <Nav.Link className='navbar' href="#link">CHURIDAR</Nav.Link>
-            <Nav.Link className='navbar' href="#link">CHURIDAR MATERIAL</Nav.Link>
+            <Nav.Link className='navbar' href="#kurta">KURTA</Nav.Link>
+            <Nav.Link className='navbar'href="#saree">SAREE</Nav.Link>
+            <Nav.Link className='navbar' href="#kurtaset">KURTA SET</Nav.Link>
+            <Nav.Link className='navbar' href="#churidar">CHURIDAR</Nav.Link>
+            <Nav.Link className='navbar' href="#churimat">CHURIDAR MATERIAL</Nav.Link>
           </Nav>
           </Navbar.Collapse>
         <Form className="d-flex ms-auto" style={{width:'500px'}}> {/* Align to the right */}
