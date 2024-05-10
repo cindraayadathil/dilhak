@@ -45,7 +45,7 @@ function Navigation() {
         </Form>
          </Container>
          <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-4">
          <Nav.Link href="#home"><FontAwesomeIcon icon={faUser} style={{ color: 'black', fontSize: '24px' }} /></Nav.Link>
          <Nav.Link href="#home">    <FontAwesomeIcon icon={faHeart} style={{ color: '#000000', fontSize: '24px' }} /></Nav.Link>
          <Nav.Link href="#home">  <FontAwesomeIcon icon={faCartShopping} style={{ color: '#000000', fontSize: '24px'}} /></Nav.Link>
