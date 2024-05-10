@@ -10,7 +10,7 @@
   border-radius: 10px;
   transition: 0.5s;
   background-color:transparent;
-border: none;
+  border: none;
 }
 .card:hover{
 transform: translateY(10px);
@@ -20,26 +20,33 @@ transform: translateY(10px);
 }
 
 .cardbody{
+/* background-image:linear-gradient(rgb(248, 167, 167),rgb(248, 204, 211)); */
 font-family: "ABeeZee", sans-serif;
 color: rgb(240, 44, 77);
 font-weight: bolder;
 background-color: transparent;
 }
 
-h1{
+h2{
   /* font-size: 17px; */
   font-family: "ABeeZee", sans-serif;
   
   color: rgb(243, 18, 56); /* Default color for Nav.Link */
 }
-h1:active{
+h2:active{
   color: rgb(143, 31, 31);
 }
 
-h1:hover { 
+h2:hover { 
   color: gray; 
 }
 
+.cardbutton{
+  background-color: transparent;
+  color: rgb(243, 18, 56); /* Default color for Nav.Link */
+border: 1px solid rgb(243, 18, 56) ;
+border-radius: 40px;
+}
 .nav-item-spacing {
   margin-right: 20px; /* Add margin to create space between Nav.Items */
 }

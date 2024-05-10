@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { Button, Card, Container, Row, Col, Nav } from 'react-bootstrap';
 import b5 from '../images/b5.jpg';
 import b1 from '../images/b1.jpg';
-import b2 from '../images/b2.jpeg';
-import b3 from '../images/b3.webp';
 import b4 from '../images/ban.webp';
 import './Bestseller.css';
+
 
 function Bestseller() {
   // State to track which section is active
@@ -33,23 +32,25 @@ function Bestseller() {
     ],
   };
 
+ 
+
   return (
     <div>
       <Nav className="justify-content-center" activeKey={activeSection}>
         <Nav.Item  className="nav-item-spacing"> 
-          <h1 className='active' eventKey="Bestseller" onClick={() => setActiveSection('Bestseller')}>
+          <h2 className='active' eventKey="Bestseller" onClick={() => setActiveSection('Bestseller')}>
             Bestseller
-          </h1>
+          </h2>
         </Nav.Item>
         <Nav.Item  className="nav-item-spacing">
-          <h1 className='active' eventKey="Trending" onClick={() => setActiveSection('Trending')}>
+          <h2 className='active' eventKey="Trending" onClick={() => setActiveSection('Trending')}>
             Trending
-          </h1>
+          </h2>
         </Nav.Item>
         <Nav.Item  className="nav-item-spacing">
-          <h1 className='active' eventKey="Latest" onClick={() => setActiveSection('Latest')}>
+          <h2 className='active' eventKey="Latest" onClick={() => setActiveSection('Latest')}>
             Latest
-          </h1>
+          </h2>
         </Nav.Item>
       </Nav>
 
@@ -59,11 +60,11 @@ function Bestseller() {
             <Col sm={3} key={index}>
               <Card className='card' data-aos="fade-up"  data-aos-delay={index * 200}  style={{ Width: '20rem',overflow:'hidden' }}>
                 
-                <Card.Img variant="top" src={card.imageUrl}style={{ Width: '35px',borderRadius:'10px',height:'305px' }} />
+                <Card.Img variant="top" src={card.imageUrl}style={{ Width: '35px',borderRadius:'2px',height:'305px' }} />
                     <Card.Body className='cardbody'>
                       <Card.Title>{card.title}</Card.Title>
                       <Card.Text>{card.text}</Card.Text>
-                      <Button variant="outline">Go somewhere</Button>
+                      <Button className='cardbutton'>Check It</Button>
                     </Card.Body>
                 
                 
